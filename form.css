@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+  
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(/img/837256.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+
+.wrapper
+{
+
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form
+{
+    width: 25rem;
+    position: relative;
+    border-radius: 10px;
+    background:linear-gradient(
+        to bottom right,
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.3)
+    );
+    padding: 80px 40px 40px;
+    line-height: 3;
+    backdrop-filter: blur(2rem);
+    box-shadow: 16px 15px rgba(0,0,0,0.5);
+}
+
+.Userheader img
+{
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+    background-color: grey ;
+    border-radius: 50px;
+}
+
+.Userheader h1
+{
+    color: brown;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.input__value
+{
+    position: relative;
+}
+
+.input__value input
+{
+  
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px 0;
+    border:none;
+    background: transparent;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    border-bottom: 2px solid white;
+    outline: none;
+
+}
+
+.input__value label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.75rem;
+    font-weight: 800;
+    pointer-events: none;
+    transition:  .3s ease-out;
+    text-transform: capitalize;
+   
+}
+
+.input__value input:focus ~ label,
+.input__value input:valid ~ label
+{
+transform: translateY(-18px);
+font-size: 1rem;
+color: brown;
+}
+
+
+.form button
+{
+    display: inline-block;
+    float: right;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: brown;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.forgot-pss
+{
+   text-decoration: none;
+}
+
+
+
+#forgotpss
+{
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    top:0;
+    right:0;
+    left:0;
+    height: 100vh;
+    background: brown;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.6s;
+    z-index: -1;
+}
+
+#forgotpss:target
+{
+    opacity: 1;
+    z-index: 1;
+   height: 100%;
+}
+
+
+
+.close
+{
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+}
+
+
